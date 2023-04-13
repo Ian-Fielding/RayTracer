@@ -192,3 +192,7 @@ table {
 	display: table;
 	margin: auto;
 }
+
+#github-link {
+	margin: 30px auto;
+}

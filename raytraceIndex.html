@@ -3,10 +3,10 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>Ray Tracer</title>
-		<link rel="stylesheet" href="style.css">
-		<script src="helperFiles/builder.js"></script>
-		<script src="helperFiles/color.js"></script>
-		<script src="helperFiles/math_utils.js"></script>
+		<link rel="stylesheet" href="raytraceStyle.css">
+		<script src="raytraceBuilder.js"></script>
+		<script src="raytraceColor.js"></script>
+		<script src="raytraceMathUtils.js"></script>
 	</head>
 
 	<body>
@@ -29,6 +29,7 @@
 					</tr>
 				</table>
 			</div>
+			<div id="github-link"><p>View source on <a href="https://github.com/Ian-Fielding/RayTracer" target="_blank" rel="noopener noreferrer">GitHub</a></p></div>
 		</div>
 		<div id="rest">
 			<button onclick="addObject()" class="main-button">Add a New Object</button>
@@ -36,6 +37,6 @@
 			<button onclick="clearObjects()" class="main-button">Clear Scene</button>
 			<div id="objects"></div>
 		</div>
-		<script src="client.js"></script>
+		<script src="raytraceClient.js"></script>
 	</body>
 </html>
