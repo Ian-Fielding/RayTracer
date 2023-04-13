@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Ray Tracer</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="helperFiles/builder.js"></script>
+		<script src="helperFiles/color.js"></script>
+		<script src="helperFiles/math_utils.js"></script>
+	</head>
+
+	<body>
+		<div id="render">
+			<canvas id="canvas" width="500" height="500"></canvas>
+			<br>
+			<div id="div-for-main-button"><button onclick="updateCanvas()" class="main-button">Update Canvas</button></div>
+			<!--  
+			<button onclick="toggleAutoUpdate()" class="main-button" id="autoupdate">Auto-Update?: YES</button>-->
+			<div id="options">
+				<b>Options</b>
+				<table>
+					<tr>
+						<td>Enable Auto-Updates?</td>
+						<td><input type="checkbox" onclick="toggleAutoUpdate()" id="toggleAutoUpdate"></td>
+					</tr>
+					<tr>
+						<td>Enable Anti-Aliasing?</td>
+						<td><input type="checkbox" onclick="toggleAntiAlias()" id="toggleAntiAlias"></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div id="rest">
+			<button onclick="addObject()" class="main-button">Add a New Object</button>
+			<button onclick="addLight()" class="main-button">Add a New Light</button>
+			<button onclick="clearObjects()" class="main-button">Clear Scene</button>
+			<div id="objects"></div>
+		</div>
+		<script src="client.js"></script>
+	</body>
+</html>
