@@ -34,18 +34,23 @@ function inputBuilder(lab,obj,width,par,oninput){
 }
 
 function sliderBuilder(lab,obj,min,max,width,par,oninput){
+	let realname="";
+	if(obj!=null)
+		realname=lab+"-"+obj.name;
+	else
+		realname=lab;
+
 	let labx=elemBuilder("label",lab+":",par);
-	labx.setAttribute("for",lab+"-"+obj.name);
+	labx.setAttribute("for",realname);
 
 	let varx=elemBuilder("input","",par);
 	varx.setAttribute("class", "object-elem slider")
-	varx.setAttribute("id",lab+"-"+obj.name);
-	varx.setAttribute("name",lab+"-"+obj.name);
+	varx.setAttribute("id",realname);
+	varx.setAttribute("name",realname);
 	varx.setAttribute("min",min);
 	varx.setAttribute("max",max);
 	varx.setAttribute("step",(max-min)/40);
 	varx.setAttribute("type","range");
-	varx.setAttribute("value",max);
 	varx.setAttribute("style","max-width:"+width);
 	varx.oninput=oninput;
 

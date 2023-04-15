@@ -119,6 +119,11 @@ button:active {
 }
 
 
+td {
+	border-top: 2px solid var(--dark);
+	max-width: 100px;
+}
+
 
 .input, select {
 	text-align: right;
