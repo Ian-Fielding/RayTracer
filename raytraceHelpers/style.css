@@ -1,0 +1,198 @@
+/* taken from https://colorhunt.co/palette/454545ff6000ffa559ffe6c7 */
+html, body {
+
+	/* Orange */
+	--dark: #454545;
+	--dark-orange: #FF6000;
+	--light-orange: #FFA559;
+	--light: #FFE6C7;
+
+	background-color: var(--light);
+	text-align: center;
+	font-family: "Trebuchet MS";
+	color: var(--dark);
+	height: 100%;
+	overflow: hidden;
+	margin: 0;
+}
+
+#render {
+
+	/* position canvas container */
+	float: left;
+	width: 50%;
+	height: 100%;
+	overflow: auto;
+	box-sizing: border-box;
+	padding: 0.5em;
+	margin: auto;
+}
+
+#rest {
+
+	/* position objects container */
+	float: left;
+	width: 50%;
+	height: 100%;
+	overflow: auto;
+	box-sizing: border-box;
+	padding: 2em;
+}
+
+.main-button {
+
+	/* major button style */
+	background-color: var(--light-orange);
+	font-family: "Trebuchet MS";
+	color: var(--dark);
+	border: none;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 16px;
+	text-decoration: none;
+	display: inline-block;
+	padding: 5px 10px;
+	margin: 5px;
+}
+
+.mini-button {
+
+	/* smaller button style */
+	background-color: var(--light-orange);
+	font-family: "Trebuchet MS";
+	color: var(--dark);
+	border: none;
+	border-radius: 2px;
+	text-align: center;
+	font-size: 10px;
+	text-decoration: none;
+	display: inline-block;
+	padding: 2px 3px;
+	margin: 5px;
+}
+
+.removal {
+
+	/* position for "remove" buttons */
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+button:hover {
+
+	/* change button style on hover */
+	background-color: var(--dark-orange);
+	color: var(--dark);
+}
+
+button:active {
+
+	/* change button style on click */
+	background-color: var(--dark);
+	color: white;
+}
+
+.object {
+
+	/* style for object containers */
+	border: 3px solid var(--dark-orange);
+	border-radius: 10px;
+	margin: 30px 0;
+	text-align: center;
+	position: relative;
+	display: inline-block;
+}
+
+.object-elem {
+
+	/* margin for parameters */
+	margin: 5px 3px;
+}
+
+td {
+
+	/* style for "options" table */
+	border-top: 2px solid var(--dark);
+	max-width: 100px;
+}
+
+.input, select {
+
+	/* style for "select" and numeric inputs */
+	text-align: right;
+	border: none;
+	padding: 2px;
+	background-color: var(--light-orange);
+	color: var(--dark);
+	border-radius: 3px;
+	font-size: 16px;
+}
+
+p {
+
+	/* style for text */
+	display: inline;
+	font-weight: bold;
+}
+
+/* adapted from https://jsfiddle.net/nobugames/drs49tbu/ 
+   styles color selector rainbow*/
+.rainbow {
+	-webkit-appearance: none;
+	width: 300px;
+	height: 15px;
+	background-color: var(--light);
+}
+
+.rainbow::-webkit-slider-runnable-track {
+	width: 100%;
+	height: 12.8px;
+	cursor: pointer;
+	background: linear-gradient(to right,
+			hsl(0, 100%, 50%) 0%,
+			hsl(36, 100%, 50%) 10%,
+			hsl(72, 100%, 50%) 20%,
+			hsl(108, 100%, 50%) 30%,
+			hsl(144, 100%, 50%) 40%,
+			hsl(180, 100%, 50%) 50%,
+			hsl(216, 100%, 50%) 60%,
+			hsl(252, 100%, 50%) 70%,
+			hsl(288, 100%, 50%) 80%,
+			hsl(324, 100%, 50%) 90%,
+			hsl(360, 100%, 50%) 100%);
+	border-radius: 5px;
+}
+
+.rainbow::-webkit-slider-thumb {
+	height: 25px;
+	width: 7px;
+	border-radius: 7px;
+	cursor: pointer;
+	-webkit-appearance: none;
+	margin-top: -5.5px;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+	background-color: var(--dark);
+}
+
+#options {
+
+	/* style for "options" container */
+	margin: auto;
+	max-width: 50%;
+	text-align: center;
+}
+
+table {
+
+	/* style for table */
+	table-layout: fixed;
+	display: table;
+	margin: auto;
+}
+
+#github-link {
+
+	/* style for link container */
+	margin: 30px auto;
+}
